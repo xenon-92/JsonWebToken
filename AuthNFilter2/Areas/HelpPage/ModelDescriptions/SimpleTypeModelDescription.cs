@@ -1,0 +1,6 @@
+namespace AuthNFilter2.Areas.HelpPage.ModelDescriptions
+{
+    public class SimpleTypeModelDescription : ModelDescription
+    {
+    }
+}
