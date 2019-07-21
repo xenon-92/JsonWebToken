@@ -20,10 +20,17 @@ namespace JwtTokenAuthentication.Filters
         public async Task AuthenticateAsync(HttpAuthenticationContext context, CancellationToken cancellationToken)
         {
             var headers = context.Request.Headers;
-            var scheme = headers.Authorization.Scheme;
-            var parameter = headers.Authorization.Parameter;
+            
+            var scheme = headers?.Authorization?.Scheme;
+            var parameter = headers?.Authorization?.Parameter;
+            if (scheme == null || parameter==null)
+            {
+                context.ErrorResult = new AuthenticationFailureRequest("Header not found", context.Request);
+                return;
+            }
             if (!scheme.Equals("Bearer",StringComparison.OrdinalIgnoreCase) || string.IsNullOrEmpty(parameter))
             {
+                context.ErrorResult = new AuthenticationFailureRequest("Token not found", context.Request);
                 return;
             }
             JWTHandler handler = new JWTHandler();
