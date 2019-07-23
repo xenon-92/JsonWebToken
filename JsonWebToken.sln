@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthNFilter2", "AuthNFilter
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JwtTokenAuthentication", "JwtTokenAuthentication\JwtTokenAuthentication.csproj", "{AB677562-8149-41A9-96BC-8E1D8E694A9D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TokenBasedAuthentication_JWT", "TokenBasedAuthentication_JWT\TokenBasedAuthentication_JWT.csproj", "{FF111861-51FC-4E86-A3EF-9E5B7F7D3E06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "randomNumber", "randomNumber\randomNumber.csproj", "{55A0D742-CC32-44EE-8588-44BED94E30CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{AB677562-8149-41A9-96BC-8E1D8E694A9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB677562-8149-41A9-96BC-8E1D8E694A9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB677562-8149-41A9-96BC-8E1D8E694A9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF111861-51FC-4E86-A3EF-9E5B7F7D3E06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF111861-51FC-4E86-A3EF-9E5B7F7D3E06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF111861-51FC-4E86-A3EF-9E5B7F7D3E06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF111861-51FC-4E86-A3EF-9E5B7F7D3E06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55A0D742-CC32-44EE-8588-44BED94E30CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55A0D742-CC32-44EE-8588-44BED94E30CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55A0D742-CC32-44EE-8588-44BED94E30CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55A0D742-CC32-44EE-8588-44BED94E30CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
